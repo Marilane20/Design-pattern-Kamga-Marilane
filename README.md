@@ -64,5 +64,5 @@ Chaque patron possède son propre **fichier Main** pour un test indépendant.
 Run → Client.java
 
 # Depuis le terminal (si compilé)
-java com.marilane.patrons.singletonCours.Singleton.client
+java com.marilane.patrons.patronsDeConstruction.singletonCours.Singleton.client
 
