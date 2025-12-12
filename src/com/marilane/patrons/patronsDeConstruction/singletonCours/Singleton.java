@@ -44,6 +44,12 @@ public  final class Singleton {
         return Somme(x,y)/2;
     }
 
+
+    public int produit(int x ,int y){
+        return x+y;
+    }
+
+
     public void affiche(){
         System.out.println("\n je suis une insance et mes valerus sont : x= "+this.x+" et y="+this.y);
     }
