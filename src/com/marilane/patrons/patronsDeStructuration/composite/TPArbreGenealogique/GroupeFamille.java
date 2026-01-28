@@ -34,14 +34,24 @@ public class GroupeFamille extends Famille{
         return "Famille:"+nomPere;
     }
 
+    //ajouter un membre et definir le parents
     public void ajouterMembre (Famille membre){
         membres.add(membre);
+        membre.setParent(this);
 
     }
 
-    //recherche ascendante, recherche descendante//
+    //recherche descendente
 
-    public void supprimer( ){
-
+    public void afficherDescendants(){
+        for( Famille membre : membres){
+            System.out.println(membre.getNom());
+            membre.afficherDescendants();
+        }
     }
+
+    public void supprimer(Famille membre){
+        membres.remove(membre);
+    }
+
 }

@@ -9,8 +9,6 @@ public class Personne extends Famille {
     }
 
 
-
-
     @Override
     public void afficher() {
         System.out.println( "Personne :" + getNom());
